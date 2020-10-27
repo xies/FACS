@@ -30,9 +30,9 @@ def load_facs(file_name):
     for par in range(len(parameters)):
     	parameters[par] = parameters[par].encode('ascii','ignore')
 	raw_data = sample.data.values
-    sample_id = sample.meta['SampleID'].encode('ascii','ignore')
+    # sample_id = sample.meta['SampleID'].encode('ascii','ignore')
     
-    return raw_data, sample_id, np.array(parameters)
+    return raw_data, np.array(parameters)
 
 """
 FUNCTION: Gates cells based on specified threshold in requested parameters;
